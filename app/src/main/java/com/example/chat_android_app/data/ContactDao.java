@@ -8,11 +8,13 @@ import androidx.room.Update;
 @Dao
 public interface ContactDao {
     @Insert
-    void insert();
+    void insert(Contact c);
 
     @Update
-    void update();
+    void update(Contact c);
 
     @Delete
-    void delete();
+    void delete(Contact c);
+
+
 }

@@ -23,6 +23,21 @@ public class chatList extends AppCompatActivity {
         this.list.add(new chatTile("ariel"));
         this.list.add(new chatTile("amiram"));
         this.list.add(new chatTile("yasif"));
+        this.list.add(new chatTile("Ariel", "14:50", "lol"));
+        this.list.add(new chatTile("Amiram", "10:19", "NOOO"));
+        this.list.add(new chatTile("Yasif", "09:00", "YESSSS!!!"));
+        this.list.add(new chatTile("bbriel", "14:50", "lol"));
+        this.list.add(new chatTile("bbmiram", "10:19", "NOOO"));
+        this.list.add(new chatTile("bbasif", "09:00", "YESSSS!!!"));
+        this.list.add(new chatTile("ffriel", "14:50", "lol"));
+        this.list.add(new chatTile("ffmiram", "10:19", "NOOO"));
+        this.list.add(new chatTile("ffasif", "09:00", "YESSSS!!!"));
+        this.list.add(new chatTile("hhriel", "14:50", "lol"));
+        this.list.add(new chatTile("hhmiram", "10:19", "NOOO"));
+        this.list.add(new chatTile("hhasif", "09:00", "YESSSS!!!"));
+        this.list.add(new chatTile("triel", "14:50", "lol"));
+        this.list.add(new chatTile("tmiram", "10:19", "NOOO"));
+        this.list.add(new chatTile("tasif", "09:00", "YESSSS!!!"));
 
         ListView lv = findViewById(R.id.lv_chats);
         ArrayAdapter<chatTile> adapter = new ArrayAdapter<chatTile>(this,
@@ -32,9 +47,6 @@ public class chatList extends AppCompatActivity {
         lv.setAdapter(adapter);
 
     }
-
-
-
 
 
 }

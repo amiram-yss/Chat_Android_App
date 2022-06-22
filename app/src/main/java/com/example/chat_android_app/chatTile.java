@@ -10,6 +10,12 @@ public class chatTile {
         this.name = name;
     }
 
+    public chatTile(String name, String lastTime, String lastMessage) {
+        this.name = name;
+        this.lastTime = lastTime;
+        this.lastMessage = lastMessage;
+    }
+
     public String getName() {
         return name;
     }
@@ -36,8 +42,8 @@ public class chatTile {
 
     @Override
     public String toString() {
-        return name +
-                lastTime +
+        return name + '\n' +
+                lastTime + '\t' +
                 lastMessage;
     }
 }

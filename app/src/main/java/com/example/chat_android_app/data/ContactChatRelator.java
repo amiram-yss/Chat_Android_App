@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class MessageChatRelator {
+public class ContactChatRelator {
     @PrimaryKey(autoGenerate = true)
     int id;
 }

@@ -7,12 +7,12 @@ import java.util.Date;
 
 @Entity
 public class Contact {
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    private String id;
     private String name;
     private String server;
     private String last;
@@ -25,10 +25,9 @@ public class Contact {
     private String password;
 
     public Contact(){
-        id = -1;
     }
 
-    public Contact(int id, String name, String server, String last, Date lastDate) {
+    public Contact(String id, String name, String server, String last, Date lastDate) {
         this.id = id;
         this.name = name;
         this.server = server;
@@ -36,7 +35,7 @@ public class Contact {
         this.lastDate = lastDate.getTime();
     }
 
-    public Contact(int id, String name, String server, String last, Date lastDate, String password) {
+    public Contact(String id, String name, String server, String last, Date lastDate, String password) {
         this.id = id;
         this.name = name;
         this.server = server;
@@ -45,7 +44,7 @@ public class Contact {
         this.password = password;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
