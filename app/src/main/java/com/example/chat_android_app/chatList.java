@@ -18,9 +18,6 @@ public class chatList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_list);
 
-
-
-
         this.list = new ArrayList<chatTile>();
 
         this.list.add(new chatTile("ariel"));
