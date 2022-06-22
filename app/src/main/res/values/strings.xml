@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Chat_Android_App</string>
-    <string name="username.hint">UserName</string>
     <string name="password_hint">Password</string>
     <string name="username_hint">User Name</string>
 </resources>
