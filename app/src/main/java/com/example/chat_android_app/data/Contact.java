@@ -1,5 +1,6 @@
 package com.example.chat_android_app.data;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -11,7 +12,8 @@ public class Contact {
         this.id = id;
     }
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey(autoGenerate = false)
+    @NonNull
     private String id;
     private String name;
     private String server;
